@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020611" />
+    <title>Sole One Archive — Pavaruthran</title>
+    <link rel="stylesheet" href="/src/sole-one.css" />
+  </head>
+  <body class="sole-universe">
+    <header class="archive-header">
+      <a class="archive-wordmark" href="/#sole-one">P<span>R</span> / SOLE ONE</a>
+      <nav class="archive-nav" aria-label="Sole One archive sections">
+        <button type="button" data-section="behind-scenes" class="is-active">BTS</button>
+        <button type="button" data-section="games">GAMES</button>
+        <button type="button" data-section="characters">CHARACTERS</button>
+        <button type="button" data-section="photos-videos">PHOTOS &amp; VIDEOS</button>
+        <button type="button" data-section="story-making">STORY / MAKING</button>
+      </nav>
+      <div class="archive-actions"><a href="/#sole-one">BACK TO MAIN</a><button id="archive-logout" type="button">LOCK ARCHIVE</button></div>
+    </header>
+    <main id="archive-content" class="archive-main" aria-live="polite">
+      <p class="archive-loading">Opening the archive…</p>
+    </main>
+    <script type="module" src="/src/sole-one-dashboard.js"></script>
+  </body>
+</html>

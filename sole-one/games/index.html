@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020611" />
+    <meta name="description" content="Games inside the SOLE ONE universe." />
+    <title>Games — SOLE ONE</title>
+    <link rel="stylesheet" href="/src/sole-one.css" />
+  </head>
+  <body class="sole-universe destination-page games-destination">
+    <header class="destination-header">
+      <a class="universe-brand" href="/sole-one-entry.html#extra-access">← BACK TO EXTRA</a>
+      <a class="destination-home" href="/sole-one">PAVARUTHRAN HOME</a>
+    </header>
+    <main class="destination-shell">
+      <section class="destination-hero" aria-labelledby="games-title">
+        <p class="universe-kicker">EXTRA / DESTINATION 02</p>
+        <h1 id="games-title">Games</h1>
+        <p>A small collection of ways to follow the signal. More game spaces can be added here.</p>
+      </section>
+      <section class="game-selection" aria-labelledby="game-selection-title">
+        <div class="game-selection__heading"><p class="universe-kicker">AVAILABLE NOW</p><h2 id="game-selection-title">Choose a game</h2></div>
+        <button class="game-launch-card" id="open-signal-game" type="button" aria-controls="signal-game" aria-expanded="false">
+          <span class="destination-number">GAME 001</span><span class="destination-icon" aria-hidden="true">⌁</span>
+          <span class="universe-kicker">MEMORY / PATTERN / FOCUS</span><span class="game-launch-card__title">Signal Echo</span>
+          <span class="game-launch-card__description">Watch the lights, remember their order, and repeat the sequence. Each round adds one more signal.</span>
+          <span class="destination-arrow">PLAY SIGNAL ECHO ↗</span>
+        </button>
+      </section>
+      <section class="signal-game game-content" id="signal-game" aria-labelledby="signal-game-title" hidden>
+        <div class="signal-game__copy"><p class="universe-kicker">GAME 001 / SIGNAL ECHO</p><h2 id="signal-game-title">Listen. Remember. Repeat.</h2><p>Watch the lights in order, then repeat the sequence. Each round adds one new signal. Use the four keys or click the pads.</p><p class="game-controls"><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd> on your keyboard</p><button class="text-button" id="back-to-games" type="button">← BACK TO GAMES</button></div>
+        <div class="signal-game__display"><div class="signal-game__score"><span>ROUND <strong id="game-round">—</strong></span><span>BEST <strong id="game-best">—</strong></span></div>
+          <div class="signal-game__board" role="group" aria-label="Signal Echo pads"><button class="signal-pad" type="button" data-pad="0" aria-label="Signal one, key 1"><span>01</span></button><button class="signal-pad" type="button" data-pad="1" aria-label="Signal two, key 2"><span>02</span></button><button class="signal-pad" type="button" data-pad="2" aria-label="Signal three, key 3"><span>03</span></button><button class="signal-pad" type="button" data-pad="3" aria-label="Signal four, key 4"><span>04</span></button></div>
+          <p class="signal-game__status" id="game-status" role="status" aria-live="polite">Ready when you are.</p><button class="signal-game__start" id="game-start" type="button">START GAME</button>
+        </div>
+      </section>
+      <a class="universe-link destination-return" href="/sole-one-entry.html#extra-access">← RETURN TO EXTRA</a>
+    </main>
+    <script type="module" src="/src/sole-one-destination-auth.js"></script>
+    <script type="module" src="/src/sole-one-games.js"></script>
+  </body>
+</html>

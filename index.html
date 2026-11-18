@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#030303" />
+    <meta name="description" content="Pavaruthran — personal portfolio" />
+    <title>Pavaruthran — Intro</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/timeline.css" />
+    <link rel="stylesheet" href="/src/pages.css" />
+  </head>
+  <body>
+    <div class="site-brand" aria-label="Pavaruthran PR">
+      <img class="site-brand__logo" src="/public/reference/pr-ogo.png" alt="Pavaruthran PR logo" />
+    </div>
+    <main id="app">
+      <section class="intro" id="intro" aria-label="Pavaruthran logo intro">
+        <video id="intro-video" class="intro__video" autoplay loop playsinline preload="auto" aria-label="Pavaruthran PR intro video">
+          <source src="/public/reference/pr-intro.mp4" type="video/mp4" />
+        </video>
+        <div class="intro__shade" aria-hidden="true"></div>
+        <div class="intro__controls" id="intro-controls">
+          <div class="intro__progress" aria-hidden="true"><span id="progress-bar"></span></div>
+        </div>
+        <a class="scroll-cue" id="scroll-cue" href="#home" aria-label="Scroll to portfolio">Scroll to explore <span aria-hidden="true">↓</span></a>
+        <button class="playback-fallback" id="playback-fallback" type="button" hidden>Tap to play intro with sound</button>
+        <p class="playback-error" id="playback-error" role="status" hidden>The intro video could not be loaded. Please check the original video file.</p>
+      </section>
+      <div class="intro-scroll-track" aria-hidden="true"></div>
+      <section class="home" id="home" aria-label="Portfolio home">
+        <div class="home__grain" aria-hidden="true"></div>
+        <div class="home__content">
+          <h1 class="home__intro-title">Hey, Sparkheads! ⚡</h1>
+          <p class="home__intro">Team PavaRuthran paasamudan Welcomes YOU! - to our little corner of the internet.</p>
+          <p class="home__intro">We've put together a little space to share what we create, created, what we learn, the stories behind our work and some interesting Fun stuffs too.</p>
+          <p class="home__intro">So, make yourself comfortable, have a look around. Don't be a stranger! explore a little, and get to know us along the way.</p>
+          <p class="home__intro">We're happy you're here. Seriously.</p>
+          <div class="home__rule"></div>
+          <p class="home__note">— Team PavaRuthran ⚡</p>
+        </div>
+      </section>
+      <div id="timeline-root"></div>
+      <div id="main-pages-root"></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/timeline.js"></script>
+    <script type="module" src="/src/pages.js"></script>
+  </body>
+</html>
